@@ -20,14 +20,14 @@ const About = () => {
       <div className="mt-5 flex flex-col gap-3 text-slate-500">
         <p>
           A forthcoming developer with great skills specializing in technical
-          education throguh hands-on learning and building real applications
+          education through hands-on learning and building real applications
         </p>
       </div>
       <div className="py-10 flex flex-col">
         <h3 className="subhead-text">My skills</h3>
         <div className="mt-16 flex flex-wrap gap-12">
-          {skills.map((skill) => (
-            <div className="block-container w-20 h-20">
+          {skills.map((skill, index) => (
+            <div key={index} className="block-container w-20 h-20">
               <div className="btn-back rounded-xl" />
               <div className="btn-front rounded-xl flex justify-center items-center">
                 <img
@@ -45,8 +45,9 @@ const About = () => {
         <h3 className="subhead-text">Work Experience</h3>
         <div className="mt-5 flex flex-col gap-3 text-slate-500">
           <p>
-            A forthcoming developer with great skills specializing in technical
-            education throguh hands-on learning and building real applications
+            During learning process, I have created and worked with many
+            projects which helped me to hence my skills in the field of
+            development. You can see the timeline below.
           </p>
         </div>
         <div className="mt-12 flex">
@@ -61,7 +62,7 @@ const About = () => {
                     <img
                       src={experience.icon}
                       alt={experience.company_name}
-                      className="w-[60%] h-[60%] object-contain"
+                      className="w-[100%] h-[100%] object-contain rounded-full"
                     />
                   </div>
                 }
