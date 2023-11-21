@@ -127,7 +127,7 @@ export const socialLinks = [
 
 export const projects = [
   {
-    iconUrl: youtube,
+    iconUrl: threads,
     theme: "btn-back-green",
     name: "Amazing Portfolio",
     description:
